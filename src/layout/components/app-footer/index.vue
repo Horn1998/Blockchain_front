@@ -19,25 +19,10 @@ export default {
             introduce: ["服务电话：13488676955　地址：天津市武清区大黄堡镇大东路支线3号794室"," Copyright © 天津根华教育科技有限公司 版权所有"],
             navList: [
                 {
-                    title:"公司简介",
+                    title:"区块链简介",
                     path:"/",
                 },{
-                    title:"教育咨询",
-                    path:"/",
-                },{
-                    title:"翻译",
-                    path:"/",
-                },{
-                    title:"图书",
-                    path:"/",
-                },{
-                    title:"外教口语",
-                    path:"/",
-                },{
-                    title:"录音剪辑",
-                    path:"/",
-                },{
-                    title:"教育咨询",
+                    title:"区块链咨询",
                     path:"/",
                 },{
                     title:"联系我们",
