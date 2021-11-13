@@ -7,7 +7,6 @@ import router from './router'
 import '../public/reset.css'
 
 
-
 router.beforeEach((to, from, next) => {    
     // chrome
     document.body.scrollTop = 0

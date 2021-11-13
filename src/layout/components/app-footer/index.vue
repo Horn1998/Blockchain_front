@@ -38,12 +38,11 @@ export default {
     background-color: #404040;
     margin-left:20px;
     float:left;
-    font-size:14px;
+    font-size:18px;
     color:#807b7b;
 }
 .l-col{
     width:60%;
-  
     height:70px;
 }
 .content{
@@ -53,8 +52,8 @@ export default {
     color:#807b7b;
 }
 .image{
-    width:120px;
-    height:120px;
+    width:80px;
+    height:80px;
     float:right;
     margin-top:-100px;
     margin-right:80px;
@@ -64,11 +63,11 @@ export default {
  .footer {
   background-color: #404040;
   padding: 3rem 1.5rem 6rem;
-  height:200px;
+  height:150px;
 }
 a:hover{
     color:white;
-    font-size:15px;
+    font-size:20px;
     color:white;
 }
 </style>

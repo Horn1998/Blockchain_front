@@ -1,53 +1,20 @@
 # login-register-vue-node
+## 1.Promise理解
+- 由于ajax请求数据时，我们不能知道数据具体回来的时间，所以只能将一个callback函数传递给ajax封装的方法，当ajax请求完成后，执行callback
+- promise对象接收resolv、reject两个参数，当一个异步动作发生时，promise对象会通过resolve完成动作进行解析，reject负责捕获异常。
+- 一个Promise对象通过new Promise().then()执行下一步操作
 
-## 实现功能
+new Promise((resolve, reject) =>{
+    setTimeout(() =>{
+        //成功的时候调用resolve
+        resolve('成功data')
+        //失败的时候调用reject
+        reject('error message')
+    }, 1000)
+}).then((data) =>{
+    //处理成功后的逻辑
+    console.log(data);//这个data 是接收的resolve参数
+}).catch((err) =>{
+    console.log(err);
+})
 
-实现登录和注册两个功能，实现全栈，数据记录在数据库，前后端分离
-
-------
-
-## 项目部署
-
-### 数据库
-
-数据库表中类型都是为 varchar，建了简单表， user表结构如下：
-
-username|password|email
----|:--:|---:
-user|user|user@163.com
-admin|admin|admin@163.com
-
-### 项目初始化
-```
-npm install
-```
-
-### 后端部署和运行
-```
-cd service
-npm install
-node app.js
-```
-
-### 运行前端项目
-```
-npm run serve
-```
--------
-
-## 使用到的技术
-
-### 前端：
-
-- html
-- css
-- vue.js
-- vue-cli
-- vue-router
-
-### 后端：
-
-- node.js
-- express
-- mysql
---------

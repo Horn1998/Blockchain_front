@@ -40,6 +40,7 @@
 </template>
 
 <script>
+import request from "axios"
 	export default{
 		name:'login-register',
 		data(){
@@ -65,15 +66,14 @@
 			login() {
 				const self = this;
 				if (self.form.useremail != "" && self.form.userpwd != "") {
-					self.$axios({
+					return request({
 						method:'post',
 						url: 'http://127.0.0.1:8080/register/insert',
 						data: {
 							email: self.form.useremail,
 							password: self.form.userpwd
 						}
-					})
-					.then( res => {
+					}).then( res => {
 						switch(res.data){
 							case 0: 
 								alert("登陆成功！");
